@@ -3,6 +3,16 @@
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<title>Piquant Interactive Website - Beta</title>
+
+		<script type="text/javascript" src="calendar.js"></script>
+
+		<script type="text/javascript">
+			<!--
+   			function Submit() {
+      			alert('Thank you for submitting!') ;
+   			}
+ 			// -->
+		</script>
 	</head>
 	
 	<body>	
@@ -46,17 +56,28 @@
 				<div id="intro1">
 					
 					<form action="/action_page.php">
-						First name: 					<input type="text"><br>
-						Last name: 						<input type="text"><br>
-						Postal Address: 				<input type="text"><br>
-						City or Suburb: 				<input type="text"><br>
-						State/Territory of Residence: 	<input type="text"><br>
-						Post code: 						<input type="text"><br>
-						Credit card number: 			<input type="text"><br>
-						Credit card expiry date: 		<input type="text"><br>
-						<input type="submit" value="Submit">
+						First name: 					<input type="text"><br><br>
+						Last name: 						<input type="text"><br><br>
+						Postal Address: 				<input type="text"><br><br>
+						City or Suburb: 				<input type="text"><br><br>
+						
+						State/Territory of Residence: 	<select>
+  															<option value="volvo">ACT</option>
+  															<option value="saab">NSW</option>
+  															<option value="opel">NT</option>
+  															<option value="audi">QLD</option>
+  															<option value="audi">SA</option>
+  															<option value="audi">TAS</option>
+  															<option value="audi">VIC</option>
+  															<option value="audi">WA</option>
+														</select><br><br>
+
+						Post code: 						<input type="text"><br><br>
+						Credit card number: 			<input type="text"><br><br>
+						Credit card expiry date: 		<script type="text/javascript">calendar();</script><br><br>
+						
+						<input type="button" id="submitButton" value="Submit" onClick="Submit();" />
 					</form>
-					
 				</div>
 			
 			</div>
