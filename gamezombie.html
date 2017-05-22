@@ -9,7 +9,10 @@
 		<script type="text/javascript">
 			<!--
    			function Submit() {
-      			alert('Thank you for submitting!') ;
+      			
+				  var firstname = document.getElementById("FirstName").value;
+				  
+				  alert(firstname + "\n" + lastname);
    			}
  			// -->
 		</script>
@@ -56,7 +59,7 @@
 				<div id="intro1">
 					
 					<form action="/action_page.php">
-						First name: 					<input type="text"><br><br>
+						First name: 					<input id="FirstName" type="text"><br><br>
 						Last name: 						<input type="text"><br><br>
 						Postal Address: 				<input type="text"><br><br>
 						City or Suburb: 				<input type="text"><br><br>
