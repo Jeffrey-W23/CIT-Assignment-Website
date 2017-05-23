@@ -9,14 +9,24 @@
 		<script type="text/javascript">
 			<!--
    			function Submit() {
-      			alert('Thank you for submitting!') ;
+      			
+				  var firstname = document.getElementById("FirstName").value;
+				  var lastname = document.getElementById("LastName").value;
+				  var address = document.getElementById("Address").value;
+				  var suburb = document.getElementById("Suburb").value;
+				  var state = document.getElementById("State").value;
+				  var postcode = document.getElementById("PostCode").value;
+				  var creditcard = document.getElementById("CreditCard").value;
+				  var creditcardexpiry = document.getElementById("CreditCardExpiry").value;
+
+				  alert("Thank you for purchasing SpaceGame" + "\n" + "Your details:" + "\n" + "\n" + firstname + "\n" + lastname + "\n" + address + "\n" + suburb + "\n" + state + "\n" + postcode + "\n" + creditcard + "\n" + creditcardexpiry);
    			}
  			// -->
 		</script>
 	</head>
 	
 	<body>	
-		<div id="container">
+		<div id="container" style="position: relative;" >
 			
 			<div id="header">
 							
@@ -56,25 +66,25 @@
 				<div id="intro1">
 					
 					<form action="/action_page.php">
-						First name: 					<input type="text"><br><br>
-						Last name: 						<input type="text"><br><br>
-						Postal Address: 				<input type="text"><br><br>
-						City or Suburb: 				<input type="text"><br><br>
+						First name: 					<input id="FirstName" type="text"><br><br>
+						Last name: 						<input id="LastName" type="text"><br><br>
+						Postal Address: 				<input id="Address" type="text"><br><br>
+						City or Suburb: 				<input id="Suburb" type="text"><br><br>
 						
-						State/Territory of Residence: 	<select>
-  															<option value="volvo">ACT</option>
-  															<option value="saab">NSW</option>
-  															<option value="opel">NT</option>
-  															<option value="audi">QLD</option>
-  															<option value="audi">SA</option>
-  															<option value="audi">TAS</option>
-  															<option value="audi">VIC</option>
-  															<option value="audi">WA</option>
+						State/Territory of Residence: 	<select id="State">
+  															<option value="act">ACT</option>
+  															<option value="nsw">NSW</option>
+  															<option value="nt">NT</option>
+  															<option value="ald">QLD</option>
+  															<option value="sa">SA</option>
+  															<option value="tas">TAS</option>
+  															<option value="vic">VIC</option>
+  															<option value="wa">WA</option>
 														</select><br><br>
 
-						Post code: 						<input type="text"><br><br>
-						Credit card number: 			<input type="text"><br><br>
-						Credit card expiry date: 		<script type="text/javascript">calendar();</script><br><br>
+						Post code: 						<input id="PostCode" type="text"><br><br>
+						Credit card number: 			<input id="CreditCard" type="text"><br><br>
+						Credit card expiry date: 		<script id="CreditCardExpiry" type="text/javascript">calendar();</script><br><br>
 						
 						<input type="button" id="submitButton" value="Submit" onClick="Submit();" />
 					</form>
@@ -82,15 +92,13 @@
 			
 			</div>
 			
-			<div id="line">	
-			</div>		
+		</div>
 
+		<div id="footer2" >
+			<span id="footerleft" style="background: black; position: absolute; width: 100%; bottom: 0;" >PROPERTY AND COPYRIGHT OF THOMAS WILTSHIRE AND PIQUANT INTERACTIVE</span>
 		</div>
+
 	</div>
-	
-	<div id="footer">
-			<span id="footerleft">PROPERTY AND COPYRIGHT OF THOMAS WILTSHIRE AND PIQUANT INTERACTIVE</span>
-		</div>
 	
 	
 	</body>

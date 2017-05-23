@@ -11,15 +11,23 @@
    			function Submit() {
       			
 				  var firstname = document.getElementById("FirstName").value;
-				  
-				  alert(firstname + "\n" + lastname);
-   			}
+				  var lastname = document.getElementById("LastName").value;
+				  var address = document.getElementById("Address").value;
+				  var suburb = document.getElementById("Suburb").value;
+				  var state = document.getElementById("State").value;
+				  var postcode = document.getElementById("PostCode").value;
+				  var creditcard = document.getElementById("CreditCard").value;
+				  var creditcardexpiry = document.getElementById("CreditCardExpiry").value;
+
+				  alert("Thank you for purchasing ZombieGame" + "\n" + "Your details:" + "\n" + "\n" + firstname + "\n" + lastname + "\n" + address + "\n" + suburb + "\n" + state + "\n" + postcode + "\n" + creditcard + "\n" + creditcardexpiry);
+				  window.location.href="index.html";
+	}
  			// -->
 		</script>
 	</head>
 	
 	<body>	
-		<div id="container">
+		<div id="container2" style="position: relative;" >
 			
 			<div id="header">
 							
@@ -52,48 +60,117 @@
 				</div>
 			</div>
 		
-		<div id="innercontainer">
+		<div id="innercontainer2">
 		
 			<div class="main">
 				
 				<div id="intro1">
 					
-					<form action="/action_page.php">
-						First name: 					<input id="FirstName" type="text"><br><br>
-						Last name: 						<input type="text"><br><br>
-						Postal Address: 				<input type="text"><br><br>
-						City or Suburb: 				<input type="text"><br><br>
-						
-						State/Territory of Residence: 	<select>
-  															<option value="volvo">ACT</option>
-  															<option value="saab">NSW</option>
-  															<option value="opel">NT</option>
-  															<option value="audi">QLD</option>
-  															<option value="audi">SA</option>
-  															<option value="audi">TAS</option>
-  															<option value="audi">VIC</option>
-  															<option value="audi">WA</option>
-														</select><br><br>
-
-						Post code: 						<input type="text"><br><br>
-						Credit card number: 			<input type="text"><br><br>
-						Credit card expiry date: 		<script type="text/javascript">calendar();</script><br><br>
+					
+					
+					
+					
+					
+					<!--<form action="/action_page.php">
+						<p>First name:</p><input id="FirstName" type="text"><br>
+						<p>Last name:</p><input id="LastName" type="text"><br>
+						<p>Postal Address:</p><input id="Address" type="text"><br>
+						<p>City or Suburb:</p><input id="Suburb" type="text"><br>
+						<p>State:</p><select id="State">
+										<option value="act">ACT</option>
+										<option value="nsw">NSW</option>
+										<option value="nt">NT</option>
+										<option value="ald">QLD</option>
+										<option value="sa">SA</option>
+										<option value="tas">TAS</option>
+										<option value="vic">VIC</option>
+										<option value="wa">WA</option>
+									</select><br><br>
+						<p>Post code:</p><input id="PostCode" type="text"><br>
+						<p>Credit card number:</p><input id="CreditCard" type="text"><br>
+						<p>Credit card expiry date:</p><script id="CreditCardExpiry" type="text/javascript">calendar();</script><br>
 						
 						<input type="button" id="submitButton" value="Submit" onClick="Submit();" />
+					</form>-->
+
+
+					<br><br>
+					<label>
+    					<div class="label-text">Please fill out the below:</div>
+  					</label>
+
+					<br><br><br><br>
+					<form>
+  						<label>
+    						<input type="text" id="FirstName" />
+    						<div class="label-text">First name:</div>
+  						</label>
+							
+						<label>
+							<input type="text" id="LastName" />
+							<div class="label-text">Last name:</div>
+						</label>
+
+						<label>
+							<input type="text" id="Address" />
+							<div class="label-text">Postal Address:</div>
+						</label>
+
+						<label>
+							<input type="text" id="Suburb" />
+							<div class="label-text">City or Suburb:</div>
+						</label>
+
+						<label>
+								<input type="text" id="PostCode" />
+							<select type="text" id="State">
+								<option value="act">ACT</option>
+								<option value="nsw">NSW</option>
+								<option value="nt">NT</option>
+								<option value="ald">QLD</option>
+								<option value="sa">SA</option>
+								<option value="tas">TAS</option>
+								<option value="vic">VIC</option>
+								<option value="wa">WA</option>
+							</select>
+
+							<div class="label-text">State:</div>
+						</label>
+
+						<label>
+							<input type="text" id="PostCode" />
+							<div class="label-text">Post code:</div>
+						</label>
+
+						<label>
+							<input type="text" id="CreditCard" />
+							<div class="label-text">Credit card number:</div>
+						</label>
+
+						<label>
+							<input type="text" id="CreditCardExpiry" />
+							<div class="label-text">Credit card expiry date:</div>
+						</label>
+
+						<button id="submitButton" value="Submit" onClick="Submit(); return false;">Submit</button>
 					</form>
+
+
+
+
+
+					
 				</div>
 			
 			</div>
 			
-			<div id="line">	
-			</div>		
+		</div>
 
+		<div id="footer2" >
+			<span id="footerleft" style="background: black; position: absolute; width: 100%; bottom: 0;" >PROPERTY AND COPYRIGHT OF THOMAS WILTSHIRE AND PIQUANT INTERACTIVE</span>
 		</div>
+
 	</div>
-	
-	<div id="footer">
-			<span id="footerleft">PROPERTY AND COPYRIGHT OF THOMAS WILTSHIRE AND PIQUANT INTERACTIVE</span>
-		</div>
 	
 	
 	</body>
