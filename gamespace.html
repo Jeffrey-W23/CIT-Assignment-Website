@@ -4,29 +4,11 @@
 		<link rel="stylesheet" href="style.css">
 		<title>Piquant Interactive Website - Beta</title>
 
-		<script type="text/javascript" src="calendar.js"></script>
-
-		<script type="text/javascript">
-			<!--
-   			function Submit() {
-      			
-				  var firstname = document.getElementById("FirstName").value;
-				  var lastname = document.getElementById("LastName").value;
-				  var address = document.getElementById("Address").value;
-				  var suburb = document.getElementById("Suburb").value;
-				  var state = document.getElementById("State").value;
-				  var postcode = document.getElementById("PostCode").value;
-				  var creditcard = document.getElementById("CreditCard").value;
-				  var creditcardexpiry = document.getElementById("CreditCardExpiry").value;
-
-				  alert("Thank you for purchasing SpaceGame" + "\n" + "Your details:" + "\n" + "\n" + firstname + "\n" + lastname + "\n" + address + "\n" + suburb + "\n" + state + "\n" + postcode + "\n" + creditcard + "\n" + creditcardexpiry);
-   			}
- 			// -->
-		</script>
+		<script type="text/javascript" src="buttonspace.js"></script>
 	</head>
 	
 	<body>	
-		<div id="container" style="position: relative;" >
+		<div id="container2" style="position: relative;" >
 			
 			<div id="header">
 							
@@ -51,56 +33,90 @@
 				
 				<div id="nav">
 					<p><a href="index.html">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp; 
-					<a href="index.html">GAMES</a> &nbsp; &nbsp; &nbsp; &nbsp;
-					<a href="index.html">ABOUT</a> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+					<a href="index.html#gam">GAMES</a> &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="index.html#about">ABOUT</a> &nbsp; &nbsp; &nbsp; &nbsp;</p>
 				</div>
 
 				<div id="linewhite">
 				</div>
 			</div>
 		
-		<div id="innercontainer">
+		<div id="innercontainer2">
 		
 			<div class="main">
 				
 				<div id="intro1">
-					
-					<form action="/action_page.php">
-						First name: 					<input id="FirstName" type="text"><br><br>
-						Last name: 						<input id="LastName" type="text"><br><br>
-						Postal Address: 				<input id="Address" type="text"><br><br>
-						City or Suburb: 				<input id="Suburb" type="text"><br><br>
-						
-						State/Territory of Residence: 	<select id="State">
-  															<option value="act">ACT</option>
-  															<option value="nsw">NSW</option>
-  															<option value="nt">NT</option>
-  															<option value="ald">QLD</option>
-  															<option value="sa">SA</option>
-  															<option value="tas">TAS</option>
-  															<option value="vic">VIC</option>
-  															<option value="wa">WA</option>
-														</select><br><br>
 
-						Post code: 						<input id="PostCode" type="text"><br><br>
-						Credit card number: 			<input id="CreditCard" type="text"><br><br>
-						Credit card expiry date: 		<script id="CreditCardExpiry" type="text/javascript">calendar();</script><br><br>
-						
-						<input type="button" id="submitButton" value="Submit" onClick="Submit();" />
+					<br><br>
+					<label>
+    					<div class="label-text">Buy SpaceGame! $8.99!</div>
+  					</label>
+					
+					<label>
+    					<div class="label-text">Please fill out the below:</div>
+  					</label><br><br>
+
+					<form>
+  						<label>
+    						<input type="text" id="FirstName" />
+    						<div class="label-text">First name:</div>
+  						</label><br>
+
+						<label>
+							<input type="text" id="LastName" />
+							<div class="label-text">Last name:</div>
+						</label><br>
+
+						<label>
+							<input type="text" id="Address" />
+							<div class="label-text">Postal Address:</div>
+						</label><br>
+
+						<label>
+							<input type="text" id="Suburb" />
+							<div class="label-text">City or Suburb:</div>
+						</label><br><br>
+
+						<label>
+							<div class="label-text" style="font-size: 13;" >State Territory:</div>
+							
+							<select class="select-style" id="State" >
+								<option value="act">ACT</option>
+								<option value="nsw">NSW</option>
+								<option value="nt">NT</option>
+								<option value="ald">QLD</option>
+								<option value="sa">SA</option>
+								<option value="tas">TAS</option>
+								<option value="vic">VIC</option>
+								<option value="wa">WA</option>
+							</select>
+						</label><br><br>
+
+						<label>
+							<input type="text" id="PostCode" />
+							<div class="label-text">Post code:</div>
+						</label><br>
+
+						<label>
+							<input type="text" id="CreditCard" />
+							<div class="label-text">Credit card number:</div>
+						</label><br>
+
+						<label>
+							<input type="text" id="CreditCardExpiry" />
+							<div class="label-text">Credit card expiry date:</div>
+						</label><br><br>
+
+						<button id="submitButton" value="Submit" onClick="Submit(); return false;">Submit and Download</button>
 					</form>
 				</div>
-			
 			</div>
-			
 		</div>
 
 		<div id="footer2" >
 			<span id="footerleft" style="background: black; position: absolute; width: 100%; bottom: 0;" >PROPERTY AND COPYRIGHT OF THOMAS WILTSHIRE AND PIQUANT INTERACTIVE</span>
 		</div>
-
 	</div>
-	
-	
-	</body>
 
+	</body>
 </html>

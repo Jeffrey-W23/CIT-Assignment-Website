@@ -25,7 +25,7 @@ body {
 
 #container2 {
 	width:1100;
-    height: 1500;
+    height: 1620;
 	background-color: rgba(40,40,40,0.4);
 	margin-left:auto;
 	margin-right:auto;
@@ -262,17 +262,6 @@ body {
 	padding-right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 form {
   text-align: center;
 }
@@ -340,8 +329,41 @@ button {
   text-transform: uppercase;
   transition: all 200ms;
 }
+
 button:hover, button:focus {
   background-color: white;
   color: #333333;
   outline: 0;
+}
+
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 2px solid #4A4A4A;
+    width: 220px;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: transparent;
+	color: #F0F0F0;
+    background: transparent;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style option {
+	color: #4A4A4A;
+}
+
+.select-style select:focus {
+    outline: none;
 }

@@ -4,25 +4,18 @@
 		<link rel="stylesheet" href="style.css">
 		<title>Piquant Interactive Website - Beta</title>
 
-		<script type="text/javascript" src="calendar.js"></script>
-
 		<script type="text/javascript">
-			<!--
    			function Submit() {
-      			
 				  var firstname = document.getElementById("FirstName").value;
 				  var lastname = document.getElementById("LastName").value;
 				  var address = document.getElementById("Address").value;
 				  var suburb = document.getElementById("Suburb").value;
 				  var state = document.getElementById("State").value;
 				  var postcode = document.getElementById("PostCode").value;
-				  var creditcard = document.getElementById("CreditCard").value;
-				  var creditcardexpiry = document.getElementById("CreditCardExpiry").value;
 
-				  alert("Thank you for purchasing ZombieGame" + "\n" + "Your details:" + "\n" + "\n" + firstname + "\n" + lastname + "\n" + address + "\n" + suburb + "\n" + state + "\n" + postcode + "\n" + creditcard + "\n" + creditcardexpiry);
-				  window.location.href="index.html";
-	}
- 			// -->
+				  alert("Thank you for purchasing ZombieGame" + "\n" + "Your details:" + "\n" + "\n" + "First Name: " + firstname + "\n" + "Last Name: " + lastname + "\n" + "Address: " + address + "\n" +  "Suburb: " + suburb + "\n" +  "State: " + state + "\n" +  "Postcode: " + postcode);
+				  window.location.href="download2.html";
+				  }
 		</script>
 	</head>
 	
@@ -52,8 +45,8 @@
 				
 				<div id="nav">
 					<p><a href="index.html">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp; 
-					<a href="index.html">GAMES</a> &nbsp; &nbsp; &nbsp; &nbsp;
-					<a href="index.html">ABOUT</a> &nbsp; &nbsp; &nbsp; &nbsp;</p>
+					<a href="index.html#gam">GAMES</a> &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="index.html#about">ABOUT</a> &nbsp; &nbsp; &nbsp; &nbsp;</p>
 				</div>
 
 				<div id="linewhite">
@@ -65,65 +58,41 @@
 			<div class="main">
 				
 				<div id="intro1">
-					
-					
-					
-					
-					
-					
-					<!--<form action="/action_page.php">
-						<p>First name:</p><input id="FirstName" type="text"><br>
-						<p>Last name:</p><input id="LastName" type="text"><br>
-						<p>Postal Address:</p><input id="Address" type="text"><br>
-						<p>City or Suburb:</p><input id="Suburb" type="text"><br>
-						<p>State:</p><select id="State">
-										<option value="act">ACT</option>
-										<option value="nsw">NSW</option>
-										<option value="nt">NT</option>
-										<option value="ald">QLD</option>
-										<option value="sa">SA</option>
-										<option value="tas">TAS</option>
-										<option value="vic">VIC</option>
-										<option value="wa">WA</option>
-									</select><br><br>
-						<p>Post code:</p><input id="PostCode" type="text"><br>
-						<p>Credit card number:</p><input id="CreditCard" type="text"><br>
-						<p>Credit card expiry date:</p><script id="CreditCardExpiry" type="text/javascript">calendar();</script><br>
-						
-						<input type="button" id="submitButton" value="Submit" onClick="Submit();" />
-					</form>-->
-
 
 					<br><br>
 					<label>
-    					<div class="label-text">Please fill out the below:</div>
+    					<div class="label-text">Buy ZombieGame! $6.99!</div>
   					</label>
+					
+					<label>
+    					<div class="label-text">Please fill out the below:</div>
+  					</label><br><br>
 
-					<br><br><br><br>
 					<form>
   						<label>
     						<input type="text" id="FirstName" />
     						<div class="label-text">First name:</div>
-  						</label>
-							
+  						</label><br>
+
 						<label>
 							<input type="text" id="LastName" />
 							<div class="label-text">Last name:</div>
-						</label>
+						</label><br>
 
 						<label>
 							<input type="text" id="Address" />
 							<div class="label-text">Postal Address:</div>
-						</label>
+						</label><br>
 
 						<label>
 							<input type="text" id="Suburb" />
 							<div class="label-text">City or Suburb:</div>
-						</label>
+						</label><br><br>
 
 						<label>
-								<input type="text" id="PostCode" />
-							<select type="text" id="State">
+							<div class="label-text" style="font-size: 13;" >State Territory:</div>
+							
+							<select class="select-style" id="State" >
 								<option value="act">ACT</option>
 								<option value="nsw">NSW</option>
 								<option value="nt">NT</option>
@@ -133,46 +102,33 @@
 								<option value="vic">VIC</option>
 								<option value="wa">WA</option>
 							</select>
-
-							<div class="label-text">State:</div>
-						</label>
+						</label><br><br>
 
 						<label>
 							<input type="text" id="PostCode" />
 							<div class="label-text">Post code:</div>
-						</label>
+						</label><br>
 
 						<label>
 							<input type="text" id="CreditCard" />
 							<div class="label-text">Credit card number:</div>
-						</label>
+						</label><br>
 
 						<label>
 							<input type="text" id="CreditCardExpiry" />
 							<div class="label-text">Credit card expiry date:</div>
-						</label>
+						</label><br><br>
 
-						<button id="submitButton" value="Submit" onClick="Submit(); return false;">Submit</button>
+						<button id="submitButton" value="Submit" onClick="Submit(); return false;">Submit and Download</button>
 					</form>
-
-
-
-
-
-					
 				</div>
-			
 			</div>
-			
 		</div>
 
 		<div id="footer2" >
 			<span id="footerleft" style="background: black; position: absolute; width: 100%; bottom: 0;" >PROPERTY AND COPYRIGHT OF THOMAS WILTSHIRE AND PIQUANT INTERACTIVE</span>
 		</div>
-
 	</div>
-	
-	
-	</body>
 
+	</body>
 </html>
